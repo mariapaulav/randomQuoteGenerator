@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root{
+    --bg-color:  #94B49F;
+    --card-color:#CEE5D0;
+    --button-color:#ECB390;
+    --text-color:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.wrapper{
+    width:600px;
+    background: var(--card-color);
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    margin: 10px;
+}
+.wrapper header{
+    font-size: 35px;
+    font-weight:600 ;
+    text-align: center;
+    color: var(--text-color)
+}
+.content{
+    margin: 35px 0;
+}
+
+.quote-area{
+    display:flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 15px;
+    color: var(--text-color)
+}
+
+
+.quote-area i:first-child{
+    margin: 3px 0 0 0;
+}
+
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 0 ;
+}
+
+.quote{
+    font-size: 22px;
+    text-align: center;
+    padding:0;
+    color: var(--text-color)
+    /* word-break: break-all; */ /* separate letters */
+}
+
+.author{
+    display: flex;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    justify-content: flex-end;
+    color: var(--text-color)
+}
+
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+}
+
+.buttons{
+    border-top: 1px solid var(--text-color);
+    color: var(--button-color);
+}
+
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 37px;
+    width: 37px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-color);
+    background: var(--button-color); 
+    transition: all 0.3s ease;
+}
+
+.features button:hover{
+    color: var(--button-color); 
+    background: var(--text-color);
+}
+
+.features ul li:hover{
+    color: var(--button-color); 
+    background: var(--text-color);
+}
+
+.features button{
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-style: 16px;
+    padding: 13px 20px;
+    border-radius: 30px;
+    background: var(--button-color); 
+}
