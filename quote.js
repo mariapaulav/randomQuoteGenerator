@@ -9,7 +9,6 @@ function randomQuote(){
    fetch('http://api.quotable.io/random')
    .then(response => response.json())
    .then(result => {
-    console.log(result)
     quoteText.innerText = result.content;
     quoteAuthor.innerText = result.author;
    quoteBtn.innerText = 'New Quote'
