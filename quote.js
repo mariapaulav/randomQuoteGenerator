@@ -28,3 +28,10 @@ copyBtn.addEventListener('click', ()=>{
 
 
 quoteBtn.addEventListener('click', randomQuote);
+
+
+const toogle = document.getElementById('toogle')
+
+toogle.onclick = function(){
+    document.body.classList.toggle('dark-theme')
+}
